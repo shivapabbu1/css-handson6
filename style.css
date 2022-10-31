@@ -1,0 +1,224 @@
+
+
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background:url("./assests.css/shara\ desert.jpg");
+  background-size: cover;
+}
+
+.navbar{
+  background-color: transparent;
+  overflow: hidden;
+}
+.nav-left{
+  display: inline-block;
+  margin: 1rem 0rem 0rem 3rem;
+}
+.nav-left img{
+  width: 69px; 
+  height:69px;
+  padding: 1rem;
+  transition: width 1s,height 1s;
+}
+.nav-right{
+  display: inline;
+  float: right;
+}
+.nav-right ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-right li{
+  text-align: center;
+  display: inline;
+  margin: 1rem;
+}
+.nav-right a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  transition:font-size 1s;
+}
+#container{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+
+}
+.part-a{
+  
+  align-items: center;
+  justify-content: center;
+  margin: 10rem;
+}
+.part-a span{
+  font-size: 90px;
+  color: white;
+  font-weight: bold;
+}
+.part-a p{
+  color: white;
+  font-size: 16px;
+  margin: 1rem 0px;
+}
+#btn{
+   background-color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+.part-b{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  
+}
+.box{
+  width: 17px;
+  height: 17px;
+  margin: 1rem;
+  position: relative;
+  transition: width 1s,height 1s, bottom 1s,position 1s;
+  
+}
+#box1{
+background-image: url("./assests.css/pic-1.png");
+background-repeat: no-repeat;
+background-size: cover;
+width: 250px;
+height: 300px;
+border: 1px;
+border-radius: 20px;
+
+}
+#box2{
+  background-image: url("./assests.css/pic-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+  border: 1px;
+  border-radius: 20px;
+  
+  }
+  #box3{
+    background-image: url("./assests.css/pic-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border: 1px;
+    border-radius: 20px;
+    
+    }
+    #box4{
+      background-image: url("./assests.css/pic-4.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 300px;
+      border: 1px;
+      border-radius: 20px;
+      
+      }
+    
+      .box_text{
+        position: relative;
+        color: white;
+        margin: 0.5rem;
+    }
+    .box_text span{
+        display: inline-block;
+        font-size: 13px;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+    }
+    .nav_left img:hover{
+      width: 90px; 
+      height:90px;
+  }
+  .nav_right a:hover{
+      font-size: 2rem;
+  }
+  .box:hover{
+      width: 18rem;
+      height: 18rem;
+      position: relative;
+      bottom: 1rem;
+  }
+  .exp_btn:hover{
+      font-size: 25px;
+  }
+  .part_A p:hover{
+      font-size: 18px;
+  }
+  .part_A span:hover{
+      font-size: 100px;
+  }
+  @media only screen and (max-width:1290px) and (min-width:850px){
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    #part_B{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+    .box{
+        margin: 1rem;
+        width: 37rem;
+        height: 20rem;
+    }
+    #box4::before{
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width:856px) and (min-width:380px){
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .navbar{
+      align-items: center;
+    }
+    .part-b{
+      margin-top: -100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    #box1{
+      width: 550px;
+      height: 480px;
+    }
+    #box2{
+      width: 550px;
+      height: 480px;
+    }
+    #box3{
+      width: 550px;
+      height: 480px;
+    }
+    #box4{
+      width: 550px;
+      height: 480px;
+    }
+    .part-a{
+      margin-top: 10px;
+    }
+
+  }
